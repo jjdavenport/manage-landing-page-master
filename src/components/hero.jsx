@@ -3,7 +3,9 @@ import hero from "../assets/illustration-intro.svg";
 const Hero = () => {
   return (
     <>
-      <img src={hero} />
+      <section className="flex justify-center">
+        <img src={hero} />
+      </section>
     </>
   );
 };

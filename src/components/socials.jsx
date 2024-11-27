@@ -1,5 +1,5 @@
 import facebook from "../assets/icon-facebook.svg";
-import youtube from "../assets/icon-facebook.svg";
+import youtube from "../assets/icon-youtube.svg";
 import twitter from "../assets/icon-twitter.svg";
 import pinterest from "../assets/icon-pinterest.svg";
 import instagram from "../assets/icon-instagram.svg";
@@ -7,7 +7,7 @@ import instagram from "../assets/icon-instagram.svg";
 const Socials = () => {
   return (
     <>
-      <ul>
+      <ul className="flex justify-between">
         <li>
           <img src={facebook} />
         </li>

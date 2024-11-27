@@ -12,7 +12,7 @@ const Nav = ({ desktop }) => {
   if (!desktop) {
     return (
       <>
-        <nav className="flex justify-between">
+        <nav className="flex justify-between p-4">
           <img src={logo} alt="Logo" />
           <button onClick={toggle}>
             <img src={menu ? close : open} alt="Menu" />
@@ -25,7 +25,7 @@ const Nav = ({ desktop }) => {
 
   return (
     <>
-      <nav className="flex justify-between">
+      <nav className="flex justify-between p-4">
         <img className="object-contain" src={logo} alt="Logo" />
         <ul className="flex gap-2">
           <li>Pricing</li>

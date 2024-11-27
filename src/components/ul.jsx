@@ -3,7 +3,7 @@ import Li from "./li";
 const Ul = () => {
   return (
     <>
-      <ul>
+      <ul className="flex flex-col gap-8 pl-4">
         <Li
           title="Track company-wide progress"
           paragraph="See how your day-to-day tasks fit into the wider vision. Go from 
