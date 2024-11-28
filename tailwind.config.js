@@ -20,6 +20,11 @@ export default {
       backgroundImage: {
         mobile: "url('../src/assets/bg-simplify-section-mobile.svg')",
         desktop: "url('../src/assets/bg-simplify-section-desktop.svg')",
+        pattern: "url('../src/assets/bg-tablet-pattern.svg')",
+      },
+      backgroundPosition: {
+        topRight: "top -1rem right -4rem",
+        mainRight: "top 2rem right -14rem",
       },
     },
   },

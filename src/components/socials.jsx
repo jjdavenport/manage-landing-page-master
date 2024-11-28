@@ -7,21 +7,21 @@ import instagram from "../assets/icon-instagram.svg";
 const Socials = () => {
   return (
     <>
-      <ul className="flex justify-between">
+      <ul className="flex w-full items-center justify-evenly gap-4">
         <li>
-          <img src={facebook} />
+          <img className="w-7 object-contain" src={facebook} />
         </li>
         <li>
-          <img src={youtube} />
+          <img className="w-7 object-contain" src={youtube} />
         </li>
         <li>
-          <img src={twitter} />
+          <img className="w-7 object-contain" src={twitter} />
         </li>
         <li>
-          <img src={pinterest} />
+          <img className="w-7 object-contain" src={pinterest} />
         </li>
         <li>
-          <img src={instagram} />
+          <img className="w-7 object-contain" src={instagram} />
         </li>
       </ul>
     </>

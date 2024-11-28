@@ -5,16 +5,16 @@ import Attribution from "./attribution";
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col gap-8 bg-darkBlue p-6 text-center text-white">
+      <footer className="flex flex-col items-center gap-10 bg-veryDarkBlue px-6 pt-10 text-center text-white">
         <Form />
-        <ul className="grid grid-cols-2 items-center text-left">
+        <ul className="grid grid-cols-2 gap-2 gap-x-10 text-left">
           <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About Us</li>
           <li>Careers</li>
+          <li>Pricing</li>
           <li>Community</li>
+          <li>Products</li>
           <li>Privacy Policy</li>
+          <li>About Us</li>
         </ul>
         <Socials />
         <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
@@ -37,7 +37,9 @@ const Footer = () => {
           </g>
         </svg>
         <div>
-          <span className="text-xs">Copyright 2020. All Rights Reserved</span>
+          <span className="text-xs text-darkGrayishBlue">
+            Copyright 2020. All Rights Reserved
+          </span>
           <Attribution />
         </div>
       </footer>

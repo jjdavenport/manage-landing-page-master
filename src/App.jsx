@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import Simplify from "./components/simplify";
+import Products from "./components/products";
 
 function App() {
   const media = useMediaQuery({ minWidth: 768 });
@@ -13,8 +14,8 @@ function App() {
     <>
       <div className="font-custom text-base">
         <Nav desktop={media} />
-        <Hero />
-        <main className="flex flex-col gap-4">
+        <main className="bg-pattern bg-mainRight flex flex-col gap-20 bg-contain bg-no-repeat">
+          <Products />
           <Manage />
           <Ul />
           <Testimonials desktop={media} />

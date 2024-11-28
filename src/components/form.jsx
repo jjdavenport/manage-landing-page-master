@@ -28,22 +28,18 @@ const Form = () => {
           <div className="flex w-full gap-2">
             <input
               value={input}
-              className="w-full rounded-full p-3 text-black"
+              className={`${error ? "text-brightRed" : "text-black"} w-full rounded-full p-2 pl-4 placeholder:text-sm focus:outline-none`}
               placeholder="Updates in your inbox…"
               onBlur={validate}
               onChange={(e) => setInput(e.target.value)}
               type="email"
             />
-            <button className="w-32 rounded-full bg-brightRed" type="submit">
+            <button className="w-28 rounded-full bg-brightRed" type="submit">
               Go
             </button>
           </div>
         </div>
-        {errorMessage && (
-          <>
-            <em className="pl-3 text-sm text-brightRed">{errorMessage}</em>
-          </>
-        )}
+        <em className="pl-3 text-xs text-brightRed">{errorMessage}</em>
       </form>
     </>
   );

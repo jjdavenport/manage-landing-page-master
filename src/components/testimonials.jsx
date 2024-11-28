@@ -34,63 +34,67 @@ const Testimonials = ({ desktop }) => {
   };
   return (
     <>
-      <article className="flex flex-col gap-8 py-10">
+      <article className="flex flex-col gap-10 py-10">
         <div className="flex justify-center">
-          <span className="text-3xl">What they’ve said</span>
+          <h3 className="text-3xl font-bold text-darkBlue">
+            What they’ve said
+          </h3>
         </div>
-        <ul>
-          <Slider
-            afterChange={(i) => setIndex(i)}
-            {...(desktop ? settingsDesktop : settingsMobile)}
-          >
-            <Testimonial
-              index={0}
-              img={aliAvatar}
-              title="Anisha Li"
-              paragraph="“Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”"
-            />
-            <Testimonial
-              index={1}
-              img={anishaAvatar}
-              title="Ali Bravo"
-              paragraph="“We have been able to cancel so many other subscriptions since using 
+        <div>
+          <ul>
+            <Slider
+              afterChange={(i) => setIndex(i)}
+              {...(desktop ? settingsDesktop : settingsMobile)}
+            >
+              <Testimonial
+                index={0}
+                img={aliAvatar}
+                title="Ali Bravo"
+                paragraph="“We have been able to cancel so many other subscriptions since using 
   Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”"
-            />
-            <Testimonial
-              index={2}
-              img={richardAvatar}
-              title="Richard Watts"
-              paragraph=" “Manage allows us to provide structure and process. It keeps us organized 
+  more focused.” "
+              />
+              <Testimonial
+                index={1}
+                img={anishaAvatar}
+                title="Anisha Li"
+                paragraph="“Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”"
+              />
+              <Testimonial
+                index={2}
+                img={richardAvatar}
+                title="Richard Watts"
+                paragraph=" “Manage allows us to provide structure and process. It keeps us organized 
   and focused. I can’t stop recommending them to everyone I talk to!”"
-            />
-            <Testimonial
-              index={3}
-              img={shanaiAvatar}
-              title="Shanai Gough"
-              paragraph=" “Their software allows us to track, manage and collaborate on our projects 
+              />
+              <Testimonial
+                index={3}
+                img={shanaiAvatar}
+                title="Shanai Gough"
+                paragraph=" “Their software allows us to track, manage and collaborate on our projects 
   from anywhere. It keeps the whole team in-sync without being intrusive.”"
-            />
-          </Slider>
-        </ul>
-        <ul className="flex justify-center gap-2">
-          <li
-            className={`${index === 0 ? "bg-white" : "bg-black"} h-4 w-4 rounded-full`}
-          ></li>
-          <li
-            className={`${index === 1 ? "bg-white" : "bg-black"} h-4 w-4 rounded-full`}
-          ></li>
-          <li
-            className={`${index === 2 ? "bg-white" : "bg-black"} h-4 w-4 rounded-full`}
-          ></li>
-          <li
-            className={`${index === 3 ? "bg-white" : "bg-black"} h-4 w-4 rounded-full`}
-          ></li>
-        </ul>
+              />
+            </Slider>
+          </ul>
+          <ul className="flex justify-center gap-2">
+            <li
+              className={`${index === 0 ? "bg-brightRed" : "bg-white"} h-3 w-3 rounded-full border border-brightRed transition-colors duration-300 ease-in-out`}
+            ></li>
+            <li
+              className={`${index === 1 ? "bg-brightRed" : "bg-white"} h-3 w-3 rounded-full border border-brightRed transition-colors duration-300 ease-in-out`}
+            ></li>
+            <li
+              className={`${index === 2 ? "bg-brightRed" : "bg-white"} h-3 w-3 rounded-full border border-brightRed transition-colors duration-300 ease-in-out`}
+            ></li>
+            <li
+              className={`${index === 3 ? "bg-brightRed" : "bg-white"} h-3 w-3 rounded-full border border-brightRed transition-colors duration-300 ease-in-out`}
+            ></li>
+          </ul>
+        </div>
         <div className="flex w-full justify-center">
           <a
-            className="w-fit rounded-full bg-brightRed p-2 text-white"
+            className="w-fit rounded-full bg-brightRed px-7 py-3 text-xs text-white"
             href="/"
           >
             Get Started

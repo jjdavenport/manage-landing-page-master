@@ -1,8 +1,8 @@
 const Attribution = () => {
   return (
     <>
-      <footer className="text-xs text-center">
-        <p className="inline">
+      <div className="whitespace-nowrap text-center text-xs">
+        <p className="inline text-darkGrayishBlue">
           Challenge by
           <a
             className="pl-1 underline"
@@ -17,7 +17,7 @@ const Attribution = () => {
           </a>
           .
         </p>
-      </footer>
+      </div>
     </>
   );
 };
